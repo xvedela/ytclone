@@ -45,5 +45,6 @@ const test = () => {
   margin-top: 70px;
   height: 100%;
   width: 100%;
+  background-color: rgba(241, 236, 236, 0.911);
 }
 </style>

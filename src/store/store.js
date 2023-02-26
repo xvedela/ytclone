@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import YoutubePlugin from '../plugins/YoutubePlugin'
+import YoutubePlugin from "../components/plugins/youtubePlugin"
 
 
 export default createStore({

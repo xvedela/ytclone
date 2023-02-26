@@ -1,6 +1,8 @@
 <script setup>
 import { useStore } from 'vuex';
 import { computed } from 'vue';
+
+
 const store = useStore()
 const categories = computed(()=> store.getters["categories/categories"])
 const changeCategory = (e) =>{
@@ -34,7 +36,7 @@ const changeCategory = (e) =>{
 }
 .category{
     margin-left: 15px;
-    background-color: rgba(128, 128, 128, 0.248);
+    background-color: rgba(250, 242, 242, 0.941);
     width: 80px;
     height: 30px;
     border-radius: 7px;

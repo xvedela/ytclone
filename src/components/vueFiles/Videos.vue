@@ -23,6 +23,7 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
           </div>
         </div>
     </div>
+    
 </template>
 
 
@@ -35,11 +36,15 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
 }
 .profile-pic {
     margin-top: -10%;
+    width: 38px; 
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    padding-bottom: 3px;
+    padding-bottom: 9px;
 }
 .uploader {
     font-family: Arial, Helvetica, sans-serif;
@@ -56,14 +61,18 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
 }
 .video-table {
     display: grid;
-    margin-top: 5%;
+    margin-top: 10%;
     row-gap: 30px;
     width: 80vw;
-    margin-left: 10%;
+    margin-left: 7%;
     box-sizing: border-box;
 }
 .video-img {
     width: 87%;
     height: 180px;
     border-radius: 15px;
-}</style>
+}
+
+
+
+</style>

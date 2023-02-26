@@ -17,7 +17,7 @@ const more = () =>{
 
 <template>
 
-    <!--This part shows smaller icons-->
+
     <div class="smallMenu" v-if="active == false">
         <div class="first-part">
             <div v-for="a in icons" class="menu-component">
@@ -25,7 +25,7 @@ const more = () =>{
             </div>
         </div>
     </div>
-<!--This part shows bigger icons-->
+
     <div class="menu" v-if="active">
         <div class="first-part">
             <div v-for="a in icons" class="menu-component">
@@ -73,6 +73,7 @@ const more = () =>{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    height: 36px;
 }
 .subscribed-img{
     border-radius: 50%;
@@ -125,6 +126,7 @@ const more = () =>{
     overflow-y: scroll;
     position: fixed;
     margin-top: 70px;
+    background-color: white;
 }
 .first-part{
     display: grid;

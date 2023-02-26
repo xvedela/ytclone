@@ -126,10 +126,12 @@ const menuOn = () =>{
 }
 
 .profile-logo img {
-  width: 60px; 
-  height: 60px;
+  width: 36px; 
+  height: 36px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+
 }
 
 
