@@ -7,14 +7,19 @@ const routersModule = {
     },
 
     mutations: {
+
         setCurrentRoute(state, route) {
+
             state.route = route;
+            
         },
     },
 
     actions: {
         setCurrentRoute({ commit }, route) {
+
             commit('setCurrentRoute', route);
+
         },
     },
 }

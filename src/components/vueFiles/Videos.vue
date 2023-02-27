@@ -6,10 +6,13 @@ const store = useStore()
 const videos = computed(() => store.getters["Youtube/videos"])
 const active = computed(() => store.getters["menu/gridTemplate"])
 const activeCategory = computed(() => store.getters["categories/activeCategory"])  
+
 </script>
 
+
+
 <template>
- dasamtavrebelia
+
 </template>
 
 
