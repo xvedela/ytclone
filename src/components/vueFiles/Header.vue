@@ -2,8 +2,8 @@
 import { useStore } from 'vuex';
 const store = useStore()
 const menuOn = () => {
-  
-  store.state.menu.menuOn = !store.state.menu.menuOn
+store.state.menu.menuOn = !store.state.menu.menuOn 
+
 }
 </script>
 

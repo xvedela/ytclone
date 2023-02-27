@@ -5,7 +5,7 @@ import subscriptionsModule from "../vueFiles/modules/subscriptionsModule";
 import routersModule from "../vueFiles/modules/routersModule";
 import categoriesModule from "../vueFiles/modules/categoriesModule";
 
-export default function youtubePlugin(store){
+export default function youtubePlugin(store) {
     
     store.registerModule("ytbe", videosModule)
     store.registerModule("icons", iconsModule)
