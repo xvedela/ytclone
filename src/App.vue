@@ -5,29 +5,18 @@ import Videos from "./components/vueFiles/Videos.vue"
 import LeftSide from "./components/vueFiles/LeftSide.vue"
 import { useStore } from 'vuex';
 const store = useStore()
-const test = () => {
-  console.log()
-}
+
+
 </script>
 
 <template>
-    <Head />
-    <div class="categories">
+  
+    <div class="flex flex-row"></div>
+      <Head />
       <Categories />
-    </div>
-
-
-  <div class="ff">
-
-    <div class="left">
       <LeftSide />
-
-    </div>
-    <div class="right">
       <Videos />
 
-    </div>
-  </div>
 </template>
 
 <style >

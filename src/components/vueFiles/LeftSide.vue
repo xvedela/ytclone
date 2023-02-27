@@ -85,9 +85,9 @@ const more = () =>{
     margin-bottom: 20px;
 }
 .subscribed-img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 65px;
+    height: 45px;
+    border-radius: 100%;
     padding-right: 10px;
     padding-left: 10px;
 }

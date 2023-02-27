@@ -7,11 +7,11 @@ import categoriesModule from "../vueFiles/modules/categoriesModule";
 
 export default function youtubePlugin(store){
     
-    store.registerModule("Youtube",videosModule)
-    store.registerModule("icons",iconsModule)
-    store.registerModule("menu",menuModule)
-    store.registerModule("subscriptions",subscriptionsModule)
-    store.registerModule("routers",routersModule)
-    store.registerModule("categories",categoriesModule)
+    store.registerModule("ytbe", videosModule)
+    store.registerModule("icons", iconsModule)
+    store.registerModule("menu", menuModule)
+    store.registerModule("subscriptions", subscriptionsModule)
+    store.registerModule("routers", routersModule)
+    store.registerModule("categories", categoriesModule)
 }
 

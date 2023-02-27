@@ -1,7 +1,8 @@
 <script setup>
 import { useStore } from 'vuex';
 const store = useStore()
-const menuOn = () =>{
+const menuOn = () => {
+  
   store.state.menu.menuOn = !store.state.menu.menuOn
 }
 </script>

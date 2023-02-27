@@ -1,8 +1,9 @@
 import { createStore } from 'vuex'
-import YoutubePlugin from "../components/plugins/youtubePlugin"
+import youtubePlugin from '../components/plugins/ytbe'
+
 
 
 export default createStore({
-  plugins: [YoutubePlugin]
+  plugins: [youtubePlugin]
 
 })
