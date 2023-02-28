@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import youtubePlugin from '../components/plugins/ytbe'
+import youtubePlugin from './plugins/ytbe'
 
 
 

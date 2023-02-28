@@ -19,7 +19,7 @@ store.state.menu.menuOn = !store.state.menu.menuOn
     <div class="middle-part">
       <input class="search-input" placeholder="Search">
 
-      <div class="search-button">
+      <div class="search-button ">
 
         <img class="search-button-logo" src="../../assets/icons/3031293.png" alt="">
 

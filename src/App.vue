@@ -11,7 +11,7 @@ const store = useStore()
 
 <template>
   
-    <div class="flex flex-row"></div>
+
       <Head />
       <Categories />
       <LeftSide />
