@@ -110,8 +110,8 @@ const more = () =>{
 }
 .icon{
     padding-top: 10px;
-    width: 20px;
-    height: 20px;
+    width: 38px;
+    height: 38px;
     padding-right: 10px;
 }
 .smallMenu{
@@ -126,7 +126,7 @@ const more = () =>{
     overflow-y: scroll;
     position: fixed;
     margin-top: 70px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 .first-part{
     display: grid;

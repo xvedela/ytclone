@@ -10,7 +10,6 @@ const store = useStore()
 </script>
 
 <template>
-  
 
       <Head />
       <Categories />
