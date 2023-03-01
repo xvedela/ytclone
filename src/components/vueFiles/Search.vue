@@ -1,11 +1,16 @@
 <script setup>
+import { useStore } from 'vuex';
+import { ref, watch } from 'vue';
 
+const store = useStore()
+
+const changeSearch = ( e ) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target.value)
 </script>
 
 <template>
     <div class="middle-part">
-        <input class="search-input" placeholder="ძიება">
-        <div class="search-button ">
+        <input class="search-input" @input="changeSearch" placeholder="ძიება">
+        <div class="search-button " @click="changeSearch">
             <img class="search-button-logo" src="../../assets/icons/3031293.png" alt="">
         </div>
     </div>

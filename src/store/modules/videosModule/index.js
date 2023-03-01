@@ -4,6 +4,7 @@ const videosModule = {
 
     state() {
         return {
+            searchString: "",
             subscribed: [],
             videos: [
                 { category: "თამაშები", name: "CHAT GPT", date: "3 დღის წინ", uploader: "KostuMa", img: "https://i.ytimg.com/vi/JTxsNm9IdYU/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBpmE3k-5q3dOYJgIBdvyMFNqXQ6A" },
@@ -28,7 +29,6 @@ const videosModule = {
                 { category: "ფილმები", name: "რადავაგდეთ?", date: "1 დღის წინ", uploader: "KostuMa", img: "https://i.ytimg.com/vi/D79l0pGLMHE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAuyhfOkwjGum6zltURmtED1q8oPg" },
                 { category: "ფილმები", name: "ფილმები name", date: "7 დღის წინ", uploader: "ხვიჩა კვარაცხელია", img: "https://i.ytimg.com/vi/ZlM924lkbB4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4yQUfqu3nMaHsYreDEMqUl0tIlw" },
 
-
             ]
 
         }
@@ -39,17 +39,14 @@ const videosModule = {
             return state.videos
         },
         filteredVideos(state) {
+                return state.videos.filter(video => video.name.toLowerCase().includes(state.searchString.toLowerCase()))
 
-            if (state.searchString !== null) {
-                return state.videos.filter(video => video.name.includes(state.searchString))
-            } else {
-                return state.videos
-            }
+
         }
     },
     mutations: {
         UPDATE_SEARCH_STRING(state, payload) {
-            payload - (payload == "") ? null : payload
+            
             state.searchString = payload
         }
     },
