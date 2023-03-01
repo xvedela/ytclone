@@ -48,9 +48,9 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
 }
 
 .author img {
-width: 40px;
-height: 40px;
-border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .title {
@@ -63,7 +63,6 @@ border-radius: 20px;
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-
 }
 
 .videos{
@@ -71,7 +70,6 @@ border-radius: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 90px;
-
 }
 
 .video {
