@@ -4,8 +4,8 @@ import { computed } from 'vue';
 
 
 const store = useStore()
-const categories = computed(()=> store.getters["categories/categories"])
-const changeCategory = (e) =>{
+const categories = computed(() => store.getters["categories/categories"])
+const changeCategory = (e) => {
     store.state.categories.activeCategory = e.target.innerHTML
 }
 </script>
@@ -13,18 +13,17 @@ const changeCategory = (e) =>{
 
 
 <template>
- <div class="categories">
-    <div @click="changeCategory" v-for="category in categories" class="category">
-        <p>{{ category.category }}</p>
+    <div class="categories">
+        <div @click="changeCategory" v-for="category in categories" class="category">
+            <p>{{ category.category }}</p>
+        </div>
+
+
     </div>
-
- 
- </div>
-
 </template>
 
 <style>
-.categories{
+.categories {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -34,7 +33,8 @@ const changeCategory = (e) =>{
     height: 30px;
     width: 100vh;
 }
-.category{
+
+.category {
     margin-left: 15px;
     background-color: rgba(250, 242, 242, 0.941);
     width: 80px;
@@ -48,8 +48,9 @@ const changeCategory = (e) =>{
     cursor: pointer;
     transition: 0.5s;
 }
-.category:hover{
+
+.category:hover {
     background-color: rgba(128, 128, 128, 0.44);
-    
+
 }
 </style>
