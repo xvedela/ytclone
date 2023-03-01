@@ -28,7 +28,6 @@ const videosModule = {
                 { category: "ფილმები", name: "CS GO spins", date: "6 დღის წინ", uploader: "KostuMa", img: "https://i.ytimg.com/vi/-kjDZH4_ABE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhIIDoofzAP&rs=AOn4CLBLGLs3Mp9Rh3Zzmb2oNRrqpad-QA" },
                 { category: "ფილმები", name: "რადავაგდეთ?", date: "1 დღის წინ", uploader: "KostuMa", img: "https://i.ytimg.com/vi/D79l0pGLMHE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAuyhfOkwjGum6zltURmtED1q8oPg" },
                 { category: "ფილმები", name: "ფილმები name", date: "7 დღის წინ", uploader: "ხვიჩა კვარაცხელია", img: "https://i.ytimg.com/vi/ZlM924lkbB4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4yQUfqu3nMaHsYreDEMqUl0tIlw" },
-
             ]
 
         }
