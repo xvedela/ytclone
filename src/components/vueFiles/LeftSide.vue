@@ -64,12 +64,14 @@ const more = () => {
 .moreChannels {
     display: flex;
     align-items: center;
+    height: 60px;
 }
 
 .arrow {
-    width: 25px;
+    width: 38px;
     margin-left: 12%;
     cursor: pointer;
+    
 }
 
 .subscribed-channel-info {

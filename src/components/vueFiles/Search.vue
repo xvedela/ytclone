@@ -18,8 +18,8 @@ const changeSearch = ( e ) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target
 
 <style scoped>
 .middle-part {
-    margin-left: 25%;
-    width: 500px;
+    margin-left: 12%;
+    width: 700px;
     display: flex;
 }
 
@@ -33,9 +33,11 @@ const changeSearch = ( e ) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target
     border-right: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    line-height: 24px;
 }
 
 .search-button-logo {
