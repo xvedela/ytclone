@@ -38,6 +38,7 @@ const changeSearch = ( e ) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
     line-height: 24px;
+    margin-left: 200px;
 }
 
 .search-button-logo {
