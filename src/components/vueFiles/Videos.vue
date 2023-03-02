@@ -66,6 +66,7 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
   flex-direction: row;
   flex-wrap: wrap;
   padding: 90px;
+  margin-left: 140px;
   
 }
 
