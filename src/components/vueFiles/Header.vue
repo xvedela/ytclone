@@ -2,15 +2,16 @@
 import { useStore } from 'vuex';
 import Search from './Search.vue';
 const store = useStore()
-const changeClicked = () => store.commit("ytbe/changeClicked")
+const menuOn = () => {
+store.state.menu.menuOn = !store.state.menu.menuOn
 
-
+}
 
 </script>
 <template>
   <div class="head">
     <div class="first-part">
-      <img @click="changeClicked" class="hamburger" src="../../assets/icons/Hamburger_icon.svg.png" alt="">
+      <img @click="menuOn" class="hamburger" src="../../assets/icons/Hamburger_icon.svg.png" alt="">
       <img class="youtube-logo" src="../../assets/icons/8gzcr6RpGStvZFA2qRt4v6-removebg-preview.png" alt="">
     </div>
     <Search />

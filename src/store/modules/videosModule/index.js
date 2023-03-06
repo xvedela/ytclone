@@ -180,10 +180,9 @@ const videosModule = {
         updateSearchString({ commit }, payload) {
             commit('UPDATE_SEARCH_STRING', payload)
         },
-        changeClicked(state) {
-            state.clicked = !state.clicked
-        }
 
     }
+
 }
+
 export default videosModule

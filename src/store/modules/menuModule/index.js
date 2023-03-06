@@ -19,6 +19,7 @@ const menuModule = {
                 return "1fr 1fr 1fr 1fr 1fr"
             }
         }
+
     }
 }
 
