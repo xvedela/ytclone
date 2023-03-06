@@ -71,7 +71,7 @@ const more = () => {
     width: 38px;
     margin-left: 12%;
     cursor: pointer;
-    
+
 }
 
 .subscribed-channel-info {
@@ -147,4 +147,5 @@ const more = () => {
     display: grid;
     grid-template-columns: 1fr;
     width: 10%;
-}</style>
+}
+</style>

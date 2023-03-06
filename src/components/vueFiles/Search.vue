@@ -4,7 +4,7 @@ import { ref, watch } from 'vue';
 
 const store = useStore()
 
-const changeSearch = ( e ) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target.value)
+const changeSearch = (e) => store.commit("ytbe/UPDATE_SEARCH_STRING", e.target.value)
 </script>
 
 <template>

@@ -3,7 +3,7 @@ import { useStore } from 'vuex';
 import Search from './Search.vue';
 const store = useStore()
 const menuOn = () => {
-store.state.menu.menuOn = !store.state.menu.menuOn
+  store.state.menu.menuOn = !store.state.menu.menuOn
 
 }
 
