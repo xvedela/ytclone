@@ -10,6 +10,7 @@ const menuOn = () => {
 }
 
 </script>
+
 <template>
   <div class="head">
     <div class="first-part">

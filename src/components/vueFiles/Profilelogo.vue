@@ -72,7 +72,7 @@ export default {
 .modal {
   width: 340px;
   height: 340px;
-  background: #01090c;
+  background: #0079a5;
   display: flex;
   border: 1px;
   border-radius: 30px;
