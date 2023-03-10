@@ -10,9 +10,9 @@
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
-            <li v-if="!isLoggedIn"><a href="#" @click="showLogin()">Log In</a></li>
-            <li v-if="!isLoggedIn"><a href="#" @click="showSignup()">Sign Up</a></li>
-            <li v-if="isLoggedIn"><a href="#" @click="logout()">Log Out</a></li>
+            <li v-if="!isLoggedIn"><a href="Log In" @click="showLogin()">Log In</a></li>
+            <li v-if="!isLoggedIn"><a href="Sign Up" @click="showSignup()">Sign Up</a></li>
+            <li v-if="isLoggedIn"><a href="Log Out" @click="logout()">Log Out</a></li>
           </ul>
         </nav>
       </form>

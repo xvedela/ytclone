@@ -15,6 +15,7 @@ const store = useStore()
       <Categories />
       <LeftSide />
       <Videos />
+      <RouterView />
 
 </template>
 
