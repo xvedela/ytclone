@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouterView } from "vue-router";
-import Users from "../components/vueFiles/Profilelogo.vue";
+import Profilelogo  from "../components/vueFiles/Profilelogo.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [

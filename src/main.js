@@ -9,4 +9,4 @@ import axios from 'axios'
     .use(store)
     .use(router)
     .mount('#app')
-
+    .use(axios)
