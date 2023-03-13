@@ -38,6 +38,7 @@ export default {
 </script>
   
 <style>
+
 .modal {
   position: fixed;
   top: 50%;

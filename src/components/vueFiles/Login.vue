@@ -26,13 +26,16 @@ export default {
                 })
                 .catch(error => {
                 });
-
+        },
+        cancel() {
+            this.$router.push({ name: 'home' })
         }
     }
 }
 </script>
 
 <template>
+     <RouterView>
     <div class="box">
         <h2 class="text-2xl font-bold mb-4">Login</h2>
         <form @submit.prevent="submitForm">
@@ -56,7 +59,7 @@ export default {
             </div>
         </form>
     </div>
-    <RouterView></RouterView>
+   </RouterView>
 </template>
   
 <style scoped>
