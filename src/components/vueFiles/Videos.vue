@@ -30,7 +30,6 @@ const activeCategory = computed(() => store.getters["categories/activeCategory"]
           <span> 2M Views • {{ video.date }} </span>
         </div>
       </div>
-
     </div>
   </div>
 </template>
