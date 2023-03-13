@@ -54,7 +54,91 @@ export default {
 </template>
 
 <style scoped>
+
 .box3 {
-  background-color: blue;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.block {
+  display: block;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+.bg-blue-500 {
+  background-color: #4299e1;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.rounded {
+  border-radius: 9999px;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #2b6cb0;
+}
+
+.text-white {
+  color: #fff;
+}
+
 </style>
