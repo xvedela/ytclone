@@ -1,30 +1,26 @@
-<script>
+
+<script setup>
 
 import axios from 'axios';
-export default {
-  data() {
-    return {
-      name: '',
-      email: '',
-      password: ''
-    }
-  },
-  methods: {
-    submitForm() {
-      const data = {
-        name: this.name,
-        email: this.email,
-        password: this.password
-      };
-      
-      axios.post('https://items.magischer.de/api/auth/register', data)
-        .then(response => {
-         console.log(response.data)
-        })
-        .catch(error => {
-        });
-    }
-  }
+import { useStore } from 'vuex';
+import { useRouter } from 'vue-router';
+import { ref } from 'vue';
+
+const store = useStore();
+const router = useRouter();
+
+const name = ref('');
+const email = ref('');
+const password = ref('');
+
+const submitForm = async () => {
+  const data = {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+  };
+
+
 }
 </script>
 
@@ -36,17 +32,17 @@ export default {
         <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
         <input type="text" id="name" v-model="name" required class="border rounded-lg py-2 px-3 w-full">
       </div>
-      
+
       <div class="emailclass">
         <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
         <input type="email" id="email" v-model="email" required class="border rounded-lg py-2 px-3 w-full">
       </div>
-      
+
       <div class="passwordclass">
         <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
         <input type="password" id="password" v-model="password" required class="border rounded-lg py-2 px-3 w-full">
       </div>
-        <div class="submitclass">
+      <div class="submitclass">
         <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
       </div>
     </form>
@@ -54,15 +50,14 @@ export default {
 </template>
 
 <style scoped>
-
 .box3 {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #8c9aea;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #d20303;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,5 +135,4 @@ export default {
 .text-white {
   color: #fff;
 }
-
 </style>

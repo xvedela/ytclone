@@ -4,6 +4,7 @@ import menuModule from "../modules/menuModule";
 import subscriptionsModule from "../modules/subscriptionsModule";
 import categoriesModule from "../modules/categoriesModule";
 
+
 export default function youtubePlugin(store) {
     
     store.registerModule("ytbe", videosModule)

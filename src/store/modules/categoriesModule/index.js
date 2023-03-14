@@ -5,16 +5,16 @@ const categoriesModule = {
         return {
             activeCategory: "sports",
 
-            categories:[
-                {category: "სპორტი"},
-                {category: "თამაშები"},
-                {category: "ფილმები"},
-                {category: "საშინელებათა"},
-                {category: "ანიმეები"},
-                {category: "მარველი"},
-                {category: "დისი"},
-                {category: "მანგა"},
-                {category: "მუსიკა"},
+            categories: [
+                { category: "სპორტი" },
+                { category: "თამაშები" },
+                { category: "ფილმები" },
+                { category: "საშინელებათა" },
+                { category: "ანიმეები" },
+                { category: "მარველი" },
+                { category: "დისი" },
+                { category: "მანგა" },
+                { category: "მუსიკა" },
 
 
             ]
@@ -22,18 +22,18 @@ const categoriesModule = {
         }
     },
 
-    mutations:{
-        selectCategory(state,payload){
+    mutations: {
+        selectCategory(state, payload) {
             return state.activeCategory = payload
 
         }
     },
 
     getters: {
-        categories(state){
+        categories(state) {
             return state.categories
         },
-        activeCategory(state){
+        activeCategory(state) {
             return state.activeCategory
         }
 
