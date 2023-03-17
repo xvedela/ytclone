@@ -1,6 +1,5 @@
 
 <script setup>
-import axios from 'axios';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';
