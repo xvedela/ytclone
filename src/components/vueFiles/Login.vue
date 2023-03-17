@@ -1,10 +1,7 @@
-
 <script setup>
-
-import axios from 'axios';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
-import {ref} from "vue";
+import { ref } from "vue";
 
 const store = useStore();
 const router = useRouter();
@@ -13,46 +10,41 @@ const email = ref('');
 const password = ref('');
 
 const submitForm = async () => {
-  const data = {
-    email: email.value,
-    password: password.value,
-  };
-
-  await axios.post('/auth/login', data).then(response => {
-          if (response.data.status) {
-            store.dispatch('register/token', response.data);
-            router.push('/');
-          }
-        });
+    await store.dispatch('register/authUser', {
+        email: email.value,
+        password: password.value,
+    });
+    router.push("/Log%20In");
 };
 </script>
 
 <template>
-     <RouterView>
-           <div class="box">
-        <h2 class="text-2xl font-bold mb-4">Login</h2>
-        <form @submit.prevent="submitForm">
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-                <input type="email" id="email" v-model="email" required class="border rounded-lg py-2 px-3 w-full">
-            </div>
-            <div class="mb-4">
-                <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-                <input type="password" id="password" v-model="password" required class="border rounded-lg py-2 px-3 w-full">
-            </div>
-            <div class="text-center">
-                <button>
-                    Submit
-                </button>
-                <div class="cancel">
-                    <button>
-                        cancel
-                    </button>
+    <RouterView>
+        <div class="box">
+            <h2 class="text-2xl font-bold mb-4">Login</h2>
+            <form @submit.prevent="submitForm">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                    <input type="email" id="email" v-model="email" required class="border rounded-lg py-2 px-3 w-full">
                 </div>
-            </div>
-        </form>
-    </div>
-   </RouterView>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+                    <input type="password" id="password" v-model="password" required
+                        class="border rounded-lg py-2 px-3 w-full">
+                </div>
+                <div class="text-center">
+                    <button>
+                        Submit
+                    </button>
+                    <div class="cancel">
+                        <button>
+                            cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </RouterView>
 </template>
   
 <style scoped>
@@ -112,6 +104,7 @@ const submitForm = async () => {
 .text-center {
     text-align: center;
 }
+
 .cancel {
     margin-left: 157px;
 }

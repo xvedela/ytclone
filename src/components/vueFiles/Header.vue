@@ -23,7 +23,8 @@ const menuOn = () => {
   </div>
 </template>
 
-<style>
+<style scoped>
+
 .hamburger {
   width: 24px;
   height: 24px;
@@ -45,9 +46,12 @@ const menuOn = () => {
   width: 100%;
 }
 
+
 .first-part {
   display: flex;
   align-items: center;
   margin-left: 30px;
 }
+
+
 </style>

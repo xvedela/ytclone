@@ -21,12 +21,12 @@
 </template>
   
 <script>
-
 export default {
   data() {
     return {
       showModal: false,
-      isLoggedIn: false
+      isLoggedIn: false,
+
     };
   },
   methods: {
@@ -101,7 +101,6 @@ export default {
 .moda nav li a:hover{
   text-decoration: underline;
 }
-
 
 
 

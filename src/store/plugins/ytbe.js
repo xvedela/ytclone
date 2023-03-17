@@ -3,7 +3,7 @@ import iconsModule from "../modules/iconsModule";
 import menuModule from "../modules/menuModule";
 import subscriptionsModule from "../modules/subscriptionsModule";
 import categoriesModule from "../modules/categoriesModule";
-import categoryModule from "../modules/categoryModule";
+import registerModule from "../modules/registerModule";
 
 
 export default function youtubePlugin(store) {
@@ -13,6 +13,6 @@ export default function youtubePlugin(store) {
     store.registerModule("menu", menuModule)
     store.registerModule("subscriptions", subscriptionsModule)
     store.registerModule("categories", categoriesModule)
-    store.registerModule("register", categoryModule)
+    store.registerModule("register", registerModule)
 }
 

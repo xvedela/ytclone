@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, RouterView } from "vue-router";
-import Profilelogo  from "../components/vueFiles/Profilelogo.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -17,6 +16,11 @@ const router = createRouter({
         path: "/Sign%20Up",
         name: "Signup",
         component: () => import("../components/vueFiles/Register.vue"),
+      },
+      {
+        path: "/category",
+        name: "Category",
+        component: () => import("../components/vueFiles/Category.vue"),
       },
     ]
 })

@@ -1,4 +1,3 @@
-
 <script setup>
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
@@ -12,14 +11,13 @@ const email = ref('');
 const password = ref('');
 
 const submitForm = async () => {
-  const data = {
+  await store.dispatch('register/authUser', {
     name: name.value,
     email: email.value,
     password: password.value,
-  };
-
-
-}
+  });
+  router.push("/Log%20In");
+};
 </script>
 
 <template>

@@ -5,7 +5,7 @@ import router from './router'
 import './assets/main.css'
 import axios from 'axios'
 
-axios.defaults.baseURL = import.meta.env.VITE_BECKEND_API_BASE_URL;
+axios.defaults.baseURL = import.meta.env.VITE_BASE_API_BASE_URL;
 
 createApp(App)
     .use(store)
