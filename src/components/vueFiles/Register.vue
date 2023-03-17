@@ -16,7 +16,7 @@ const submitForm = async () => {
     email: email.value,
     password: password.value,
   });
-  router.push("/Log%20In");
+  router.push("/category");
 };
 </script>
 
