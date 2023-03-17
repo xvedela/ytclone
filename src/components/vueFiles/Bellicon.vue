@@ -1,9 +1,9 @@
 <template>
     <button>
-    <div class="third-part">
-        <img class="bell-icon" src="../../assets/icons/free-bell-icon-860-thumb.png" alt="">
-    </div>
-</button>
+        <div class="third-part">
+            <img class="bell-icon" src="../../assets/icons/free-bell-icon-860-thumb.png" alt="">
+        </div>
+    </button>
 </template>
 
 <style scoped>

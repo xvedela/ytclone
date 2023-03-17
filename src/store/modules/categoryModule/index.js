@@ -12,7 +12,7 @@ const categoryModule = {
     },
     getters: {
         categories: (state) => {
-            return state.categories;
+            return categories.map((c) => ({ ...c, editing: false, deleting: false }))
         }
     },
     mutations: {

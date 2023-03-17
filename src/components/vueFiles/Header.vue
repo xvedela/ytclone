@@ -24,7 +24,6 @@ const menuOn = () => {
 </template>
 
 <style scoped>
-
 .hamburger {
   width: 24px;
   height: 24px;
@@ -52,6 +51,4 @@ const menuOn = () => {
   align-items: center;
   margin-left: 30px;
 }
-
-
 </style>
