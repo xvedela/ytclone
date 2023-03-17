@@ -1,3 +1,5 @@
+import store from "../../index.js";
+
 
 const videosModule = {
     namespaced: true,
@@ -165,10 +167,8 @@ const videosModule = {
         videos(state) {
             return state.videos
         },
-        filteredVideos(state) {
-            return state.videos.filter(video => video.name.toLowerCase().includes(state.searchString.toLowerCase()))
-
-
+        filteredVideos(state, getters) {
+            return state.videos.filter(video => video.name.toLowerCase().includes(state.searchString.toLowerCase())).filter(v => v.category.includes(store.getters['categories/activeCategory']));
         }
     },
     mutations: {

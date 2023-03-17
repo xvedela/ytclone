@@ -3,7 +3,7 @@ const categoriesModule = {
 
     state() {
         return {
-            activeCategory: "sports",
+            activeCategory: "",
 
             categories: [
                 { category: "სპორტი" },
@@ -31,7 +31,7 @@ const categoriesModule = {
 
     getters: {
         categories(state) {
-            return state.categories
+            return state.categories;
         },
         activeCategory(state) {
             return state.activeCategory

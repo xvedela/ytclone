@@ -4,6 +4,7 @@ import menuModule from "../modules/menuModule";
 import subscriptionsModule from "../modules/subscriptionsModule";
 import categoriesModule from "../modules/categoriesModule";
 import registerModule from "../modules/registerModule";
+import categoryModule from "../modules/categoryModule";
 
 
 export default function youtubePlugin(store) {
@@ -14,5 +15,6 @@ export default function youtubePlugin(store) {
     store.registerModule("subscriptions", subscriptionsModule)
     store.registerModule("categories", categoriesModule)
     store.registerModule("register", registerModule)
+    store.registerModule("category", categoryModule)
 }
 

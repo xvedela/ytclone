@@ -17,8 +17,6 @@ const changeCategory = (e) => {
         <div @click="changeCategory" v-for="category in categories" class="category">
             <p>{{ category.category }}</p>
         </div>
-
-
     </div>
 </template>
 

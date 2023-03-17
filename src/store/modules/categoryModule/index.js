@@ -1,29 +1,40 @@
+import axios from "axios";
+
+axios.defaults.headers.common.Authorization = `Bearer ${localStorage.getItem('token')}`;
+
 const categoryModule = {
 
     namespaced: true,
     state() {
         return {
-            token: null,
-            category_id: []
+            categories: null,
         }
     },
     getters: {
-        info(state) {
-            return state.category_id
-        },
-        getApiUrl: (state) => {
-            return 'https://items.magischer.de/api/categories'
-        },
+        categories: (state) => {
+            return state.categories;
+        }
     },
     mutations: {
-        SAVE_TOKEN(state, payload) {
-            state.token = payload
+        SAVE_CATEGORIES(state, categories) {
+            state.categories = categories;
         }
     }, actions: {
-        token({ commit }, payload) {
-            commit('SAVE_TOKEN', payload.token)
-        }
-    }
+        async getCategories({ commit }) {
+            const res = await axios.get(`/categories`);
+            if (res.data.success) {
+                commit("SAVE_CATEGORIES", res.data.data);
+            }
+        },
+        async deleteCategory({ dispatch }, id) {
+            await axios.delete(`/categories/${id}`);
+            dispatch("getCategories");
+        },
+        async addCategory({ dispatch }, name) {
+            await axios.post(`/categories`, { name, type: "news" });
+            dispatch("getCategories");
+        },
+    },
 
 }
 
